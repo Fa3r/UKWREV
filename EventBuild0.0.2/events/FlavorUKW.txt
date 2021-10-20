@@ -1,0 +1,33 @@
+
+
+
+#Spawn Country on Inowroclaw
+country_event = {
+	id = resp.1
+	title = resp.1.text
+	desc = resp.1.desc
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes
+	hidden = no
+		
+			immediate = {
+				4523 {
+					cede_province = UKW
+			
+				}
+			}
+	option =  {
+		name = "UKW_REV"
+		add_prestige = 10
+		}
+	
+
+
+
+
+
+
+
+
+
+}
