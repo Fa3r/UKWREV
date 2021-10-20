@@ -1,0 +1,6 @@
+goverment = monarchy
+mercantilism = 10
+technology_group = eastern
+religion = catholic
+primary_culture = polish
+capital = 4523 # inowroclaw
