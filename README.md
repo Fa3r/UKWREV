@@ -5,3 +5,8 @@
 0.0.2
 
  - Dodano testowy Event który wypuszcza państwo na porwincji Inowrocław
+
+0.5
+
+ - Dodano 24 Eventy które płynnie przechodzą miedzy sobą co rok
+ - Przygotowano całe rozgałęzienie eventów które prowadzi do różnych zakończeń
