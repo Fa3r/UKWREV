@@ -10,3 +10,4 @@
 
  - Dodano 24 Eventy które płynnie przechodzą miedzy sobą co rok
  - Przygotowano całe rozgałęzienie eventów które prowadzi do różnych zakończeń
+ - Dodano 3 Modifiery które wpływają na rozgrywkę (Będzie ich więcej)
