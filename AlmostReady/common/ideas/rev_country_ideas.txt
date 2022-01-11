@@ -1,0 +1,45 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+### Nation specific idea groups
+
+
+UKW_ideas = {
+	start = {
+		all_power_cost = -0.05
+		advisor_cost = -0.10
+	}
+	
+	Bonus = {
+		land_morale = 0.20
+	}
+	
+	trigger = {
+		tag = UKW
+	}
+	free = Yes
+	
+	ukw_first_idea = {
+		idea_cost = -0.1
+	}
+	ukw_second_idea = {
+		drill_gain_modifier = 0.25
+	}
+	ukw_third_idea = {
+		extra_manpower_at_religious_war = yes
+	}
+	ukw_fourth_idea = {
+		infantry_cost = -0.1
+	}
+	ukw_fivth_idea = {
+		global_unrest = -0.5
+	}
+	ukw_sixst_idea = {
+		warscore_cost_vs_other_religion = -0.25
+	}
+	ukw_seventh_idea = {
+		may_recruit_female_generals = yes
+	}
+}
+

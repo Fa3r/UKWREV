@@ -1,0 +1,5 @@
+student_tech = {
+	adm_tech_cost_modifier = 0.5
+	mil_tech_cost_modifier = 0.5
+	dip_tech_cost_modifier = 0.5
+}
