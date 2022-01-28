@@ -16,4 +16,4 @@
 0.9
 
 - Wykonana prawie w pełni modyfikacja
-- Naprawiono Bugi by przynieść nwoe
+- Naprawiono Bugi by przynieść nowe
