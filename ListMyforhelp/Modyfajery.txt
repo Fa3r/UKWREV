@@ -1,0 +1,407 @@
+#############################
+# List of EU IV Modifiers
+#############################
+picture = "_" (ex. "estuary_icon") #uses graphics from ideas_EU4 folder, this replaces the icon = of EU III
+
+# Event Template
+country_event = {
+	id = 
+	title = 
+	desc = 
+	picture = ANGRY_MOB_eventPicture
+	fire_only_once = yes
+	hidden = no 
+}
+
+#############################
+# Army
+#############################
+amount_of_banners = 0.25
+army_tradition = 1
+army_tradition_decay = -0.01
+army_tradition_from_battle = 0.5
+artillery_bonus_vs_fort = 1
+artillery_cost = -0.1
+artillery_power = 0.1
+backrow_artillery_damage = 0.20
+cavalry_cost = -0.2
+cavalry_flanking = 0.5
+cavalry_power = 0.1
+cav_to_inf_ratio = 0.1
+defensiveness = 0.25
+discipline = 0.05
+drill_decay_modifier = -0.25
+drill_gain_modifier = 0.5
+fire_damage = 0.1
+fire_damage_received = -0.5
+fort_maintenance_modifier = -0.1
+garrison_size = 0.25
+general_cost = -0.25
+global_garrison_growth = 0.1
+global_manpower = 1.0
+global_manpower_modifier = 0.1
+global_regiment_cost = -0.1
+global_regiment_recruit_speed = -0.1
+has_banners = 1 #This enables Manchu banners
+hostile_attrition = 1
+infantry_cost = -0.1
+infantry_power = 0.1
+is_janissary_modifier = yes #Add this to make modifiers only apply to jannissary units. Without CoC this part is ignored and it becomes a normal modifier
+is_rajput_modifier = yes #Add this to make modifiers only apply to Rajput units. Without Dharma this part is ignored and it becomes a normal modifier
+land_attrition = -0.25
+land_forcelimit = 1
+land_forcelimit_modifier = 0.1
+land_maintenance_modifier = -0.1
+land_morale = 0.25 #as of 1.2 this is now a percentage multiplier
+leader_land_fire = 1
+leader_land_manuever = 1
+leader_land_shock = 1
+leader_siege = 1
+loot_amount = 0.1
+manpower_recovery_speed = 0.25
+mercenary_discipline = 0.05
+movement_speed = 0.15
+possible_condottieri = 0.25
+prestige_from_land = 0.5
+raze_power_gain = 0.2
+recover_army_morale_speed = 0.05
+reinforce_cost_modifier = -0.50
+reinforce_speed = 0.25
+reserves_organisation = 0.25 #Reduced morale damage taken by reserves
+rival_border_fort_maintenance = -0.5
+siege_blockade_progress = 1
+shock_damage = 0.5
+shock_damage_received = -0.1
+siege_ability = 0.1
+yearly_army_professionalism = 0.01
+
+#############################
+#Factions
+#############################
+bureaucrats_influence = 0.1
+enuchs_influence = 0.1
+temples_influence = 0.1
+
+mr_aristocrats_influence = 0.1
+mr_guilds_influence = 0.1
+mr_traders_influence = 0.1
+
+#############################
+# Colonization
+#############################
+colonists = 1
+colonist_placement_chance = 0.05
+global_colonial_growth = 25
+global_tariffs = 0.25
+native_uprising_chance = -0.25
+native_assimilation = 0.25
+range = 0.2
+
+#############################
+# Diplomatic
+#############################
+ae_impact = -0.05
+diplomats = 1
+diplomatic_annexation_cost = -0.25
+diplomatic_reputation = 1
+diplomatic_upkeep = 1
+enemy_core_creation = 0.1
+enforce_religion_cost = 0.25
+fabricate_claims_time = -0.25
+improve_relation_modifier = 0.25
+justify_trade_conflict_cost = -0.1
+justify_trade_conflict_time = -0.1
+power_projection_from_insults = 1
+province_warscore_cost = -0.2
+rival_change_cost = -0.5
+unjustified_demands = -0.5
+vassal_forcelimit_bonus = 0.33
+vassal_income = 0.1
+
+#############################
+# Economy, Technology, Splender
+#############################
+adm_tech_cost_modifier = -0.1
+build_cost = -0.1
+build_time = -0.25
+development_cost = -0.1
+dip_tech_cost_modifier = -0.1
+embracement_cost = -0.2
+global_institution_spread = 0.05
+global_tax_income = 5 #Unaffected by global tax income modifiers
+global_tax_modifier = 0.05
+inflation_action_cost = -0.1
+inflation_reduction = 0.1
+institution_spread_from_true_faith = 0.5
+interest = -1
+mil_tech_cost_modifier = -0.1
+monthly_splendor = 1
+native_advancement_cost = -0.50
+production_efficiency = 0.1
+technology_cost = -0.05
+
+#############################
+# Government, Advisors, and Rulers
+#############################
+adm_advisor_cost = -0.1
+administrative_efficiency = 0.05
+advisor_cost = -0.5
+advisor_pool = 1
+all_power_cost = -0.05
+candidate_random_bonus = 1
+core_creation = -0.5
+dip_advisor_cost
+election_cycle = 1 #Add or reduce years between elections
+envoy_travel_time = -0.2
+female_advisor_chance = 0.1 #needs to be localized
+free_adm_policy = 1
+free_dip_policy = 1
+free_mil_policy = 1
+free_policy = 1
+heir_chance = 0.5
+horde_unity = 0.5
+idea_cost = -0.1
+imperial_authority = 0.05
+imperial_authority_value = 0.1 #Holy Roman Emperor Authority
+imperial_mandate = 0.1
+legitimacy = 1
+max_absolutism = 5
+max_states = 5
+meritocracy = 0.5
+migration_cooldown = -0.1
+mil_advisor_cost = -0.1
+monarch_admin_power = 1
+monarch_diplomatic_power = 1
+monarch_military_power = 1
+monthly_militarized_society = -0.05
+monthly_support_heir_gain = 0.25
+possible_adm_policy = 1
+possible_dip_policy = 1
+possible_mil_policy
+prestige = 1
+prestige_decay = -0.01
+reelection_cost = -0.1
+reform_progress_growth = 0.15
+republican_tradition = 0.01
+same_culture_advisor_cost = -0.25
+state_maintenance_modifier = -0.25
+yearly_absolutism = 0.1
+yearly_corruption = -0.1
+
+#############################
+# Idea Modifiers (can only be used with ideas) and other rules
+#############################
+important = yes #Can be placed in an idea group (between category and bonus). Makes AI prioritize group when spending power.
+
+auto_explore_adjacent_to_colony = yes #Russia's Idea
+cb_on_government_enemies = yes #Diplomatic Idea
+cb_on_overseas = yes #Expansion Idea, CB on all Indian, Chinese, Sub-Saharan, and Nomad tech group nations (must be in Asia and not primitives) if a higher tech group
+cb_on_primitives = yes #Exploration and US Idea, CB on all pagans
+cb_on_religious_enemies = yes #Religious Idea, CB on all other religious groups
+extra_manpower_at_religious_war = yes #Ottoman Idea, 3X manpower in religious wars
+idea_claim_colonies = yes #Spain's Idea, Allows Spain to claim any province owned by a colonial country or that is overseas
+may_explore = yes #Exploration and Norway Idea
+may_perform_slave_raid = yes
+may_recruit_female_generals = yes
+no_religion_penalty = yes #Hungary's and US Ideas, negative religious tolerance no longer gives any penalties
+reduced_stab_impacts = yes #Diplomatic Ideas, lower impact on stability from diplomatic actions
+sea_repair = yes #Naval Idea
+
+##
+# Other Rules (found in Ages)
+##
+rule = {  } #these are inside the rule scope
+attack_bonus_in_capital_terrain = yes
+can_bypass_forts = yes
+can_chain_claim = yes
+can_colony_boost_development = yes
+can_transfer_vassal_wargoal = yes
+ignore_coring_distance = yes
+force_march_free = yes
+free_maintenance_on_expl_conq = yes
+
+#############################
+# Military and Mercenaries
+#############################
+free_leader_pool = 1
+leader_cost = -0.1
+mercenary_cost = -0.25
+merc_maintenance_modifier = -0.25
+possible_condottieri = 0.5   #no icon as of 1.19
+possible_mercenaries = 1.0
+war_exhaustion = -0.1
+war_exhaustion_cost = -0.2
+war_taxes_cost_modifier = -0.5
+
+#############################
+# Navy
+#############################
+blockade_efficiency = 0.5
+capture_ship_chance = 0.2
+galley_cost = -0.25
+galley_power = 0.1
+global_naval_engagement_modifier = 0.5
+global_sailors = 1000
+global_sailors_modifier = 0.25
+global_ship_cost = -0.1
+global_ship_recruit_speed = -0.1
+global_ship_repair = 0.2
+global_ship_trade_power = 0.2
+heavy_ship_cost = -0.25
+heavy_ship_power = 0.1
+leader_naval_fire = 1
+leader_naval_manuever = 1
+leader_naval_shock = 1
+light_ship_cost = -0.25
+light_ship_power = 0.1
+naval_attrition = -0.25
+naval_forcelimit = 1
+naval_forcelimit_modifier = 0.25
+naval_maintenance_modifier = -0.25
+naval_morale = 0.25 #as of 1.2 this is now a percentage multiplier
+naval_tradition_from_battle = 0.5
+navy_tradition = 1
+navy_tradition_decay = -0.01
+prestige_from_naval = 0.5
+privateer_efficiency = 0.25
+recover_navy_morale_speed = 0.05
+sailor_maintenance_modifer = -0.1
+sailors_recovery_speed = 0.25
+ship_durability = 0.1 #According to Johan this is the same as Military Tactics for Ships
+sunk_ship_morale_hit_recieved = -0.2
+ship_power_propagation = 0.2
+transport_cost = -0.25
+transport_power = 0.1
+
+#############################
+# Religion
+#############################
+church_power_modifier = 0.1
+devotion = 0.5
+global_heretic_missionary_strength = 0.03
+global_missionary_strength = 0.02
+harmonization_speed = 0.1
+missionaries = 1
+monthly_fervor_increase = 1
+monthly_karma =
+monthly_piety = 0.002
+papal_influence = 1
+prestige_per_development_from_conversion = 0.3
+religion = yes #If an event modifier has this it'll be removed if the country changes religion
+religious_unity = 0.5
+secondary_religion = yes #If an event modifier has this it'll be removed if the country changes its syncretic faith
+tolerance_heathen = 1
+tolerance_heretic = 1
+tolerance_own = 1
+warscore_cost_vs_other_religion = -0.1
+yearly_harmony = 0.25
+
+#############################
+# Revolts, Stability, Culture, and Spies
+#############################
+autonomy_change_time = -0.5
+core_decay_on_your_own = -0.5
+culture_conversion_cost = -0.25
+discovered_relations_impact = -0.25
+global_autonomy = 0.05 #Per month
+global_unrest = -3
+global_spy_defence = 0.2
+harsh_treatment_cost = -0.15
+liberty_desire = 10 #Used in the subject's scope
+liberty_desire_from_subject_development = -0.33
+min_autonomy = 50
+min_autonomy_in_territories = -0.1
+num_accepted_cultures = 2
+promote_culture_cost = -0.25
+rebel_support_efficiency = 0.5
+reduced_liberty_desire = 10 #Used in the overlord's scope
+reduced_liberty_desire_on_same_continent = 25
+spy_offence = 0.1
+stability_cost_modifier = -0.1
+years_of_nationalism = -10
+
+#############################
+# Trade
+#############################
+caravan_power = 0.2
+embargo_efficiency = 0.25
+global_foreign_trade_power = 0.1
+global_own_trade_power = 0.1
+global_prov_trade_power_modifier = 0.1
+global_trade_goods_size_modifier = 0.1
+global_trade_power = 0.1
+merchants = 1
+placed_merchant_power = 5
+trade_efficiency = 0.05
+trade_range_modifier = 0.25
+trade_steering = 0.25
+
+#############################
+# Province
+#############################
+#Army
+attrition = 5
+garrison_growth = 0.05
+fort_level = 1
+local_amount_of_banners = 0.1
+local_defensiveness = 0.1
+local_friendly_movement_speed = 0.1
+local_hostile_attrition = 1
+has_banners = 1 #Enables province to provide Manchu banners
+local_hostile_movement_speed = -0.2
+local_manpower = 0.05
+local_manpower_modifier = 0.2
+local_regiment_cost = -0.05
+regiment_recruit_speed = -0.1
+max_attrition = 5
+supply_limit = 0.5
+supply_limit_modifier = -0.1
+
+#Colony
+local_colonial_growth = 10
+local_colonist_placement_chance = 0.1
+
+#Economy, Buildings, Institutions
+allowed_num_of_buildings = 1
+cs_only_local_development_cost = -0.1 #Unlike local_development_cost this won't be converted if the player doesn't own Common Sense
+inflation_reduction_local = 0.1
+institution_growth = 5
+local_build_cost = 0.15
+local_build_time = -0.5
+local_development_cost = -0.1
+local_institution_spread = 0.1
+local_monthly_devastation = 0.05
+local_production_efficiency = 0.25
+local_state_maintenance_modifier = -0.25
+local_tax_modifier = 0.1
+tax_income = 1
+
+#Navy
+local_naval_engagement_modifier = 0.10 #Only used in sea provinces
+local_sailors_modifier = 0.5
+local_ship_cost = -0.1
+local_ship_repair = 0.25
+ship_recruit_speed = -0.1
+
+#Religion and Culture
+local_culture_conversion_cost = -0.25
+local_missionary_strength = 0.001
+local_religious_unity_contribution = -1
+religious_conversion_resistance = 0.90
+
+#Rebels and Autonomy
+local_autonomy = 0.05 #Per month
+local_unrest = -1
+local_years_of_nationalism = -5
+min_local_autonomy = 50
+
+#Trade
+province_trade_power_modifier = 0.25
+province_trade_power_value = 1
+trade_goods_size = 0.2
+trade_goods_size_modifier = 0.25
+trade_value = 1
+trade_value_modifier = 0.25
+
+#Other
+local_core_creation = 0.5

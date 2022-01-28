@@ -1,0 +1,1183 @@
+#############################
+# List of EU IV Triggers
+#############################
+(ROOT, FROM, tag, REB, owner, PREV, THIS, emperor)
+
+hidden_trigger = {
+ 
+}
+custom_trigger_tooltip = {
+    tooltip =
+ 
+}
+has_dlc =
+has_custom_ideas = yes
+has_global_flag =
+had_global_flag = { flag = _ days = 365 }
+ironman = yes
+is_playing_custom_nation = no
+log =
+map_setup = #map_setup_random
+nation_designer_points = 200 #checks how many points were used to create nation in the nation designer
+normal_or_historical_nations = yes
+normal_province_values = yes
+num_of_custom_nations = 1
+real_day_of_year =
+real_month_of_year =
+start_date = 1444.11.11 #or whichever date you want to check for, will only return true if the game was started on this specific date
+started_in = 1444.11.11 #or whichever date you want to check for, returns true if the game was started on or after this date. Localization is currently messed for this trigger
+always = no #Will make it so that an event will never fire, if put in the potential of a decision then it will never be available, if in the allow of the decision then it can't be enacted.
+
+if = {
+    limit = {
+        #who this trigger applies to
+    }
+    #triggers for those that satisfy the limit
+}
+#Place after an "if" trigger. This trigger set applies when the previous "if" limits return false, but only if the else_if limit returns true
+else_if = {
+    limit = {
+ 
+    }
+ 
+}
+#Place after an "if" trigger. This trigger happens when any previous "if" and "else_if" limits return false
+else = {
+ 
+}
+
+#Scripted Triggers (defined in common\scripted_triggers)
+scripted_triggers_name = yes #no doesn't work, must use NOT = { scripted_triggers_name = yes }
+
+#######################################
+# Both Triggers (province and country)
+#######################################
+is_month =
+is_year =
+
+#Used for counting provinces, put any trigger(s) after value = and it returns true if at least that number of provinces (the value) return true for the trigger.
+num_of_owned_provinces_with = {
+    value = 2
+ 
+}
+
+#############################
+# Other Country Triggers
+#############################
+ai = yes
+exists = yes #Can also use tag
+great_power_rank = 1
+had_country_flag = { flag = _ days = 365 }
+has_country_flag =
+has_country_modifier =
+has_first_revolution_started = yes
+has_game_started = yes
+has_mission = #mission name, checks if scope has the mission available
+has_saved_event_target =
+has_switched_nation = no
+in_golden_age = yes
+is_great_power = yes
+is_revolution_target = yes
+luck = no
+mission_completed = #mission name
+num_of_cities = 3 #can also use ROOT, FROM, PREV, tag, etc to compare country size
+revolution_target_exists = yes
+tag =
+was_player = no
+was_tag =
+
+#Following Trigger has two separate uses
+calc_true_if = {
+    #triggers
+    amount = 3
+}
+
+#It can be used with multiple triggers, and it returns true if at least X amount of the triggers return true
+calc_true_if = {
+    ADM = 4
+    religion = catholic
+    full_idea_group = religious_ideas
+    religious_unity = 1.0
+    is_papal_controller = yes
+    amount = 3
+}
+#So this will return true if at least 3 of these 5 triggers are true
+
+#This trigger funtions differently if using one of the all_ triggers
+#Country Scope Example
+calc_true_if = {
+    all_country = {
+        religion = protestant
+    }
+    amount = 5
+}
+#This will return true if there are at least 5 Protestant countries in the world
+
+#Province Scope Example
+calc_true_if = {
+    all_owned_province = {
+        has_terrain = marsh
+    }
+    amount = 2
+}
+#This will return true if the scope has at least two provinces that have the marsh terrain
+
+has_global_modifier_value = {
+    which =
+    value =
+}
+
+#Example
+has_global_modifier_value = {
+    which = cavalry_power
+    value = 0.5
+}
+
+#Can use building names as a trigger to check that country has a certain number of a building
+name_of_building = 3  #ex. university = 1
+
+#############################
+# AI Only Triggers
+#############################
+ai = yes
+ai_attitude = { who = _ attitude = _ }
+ai_wants_to_raise_cossack = yes #checks if the AI is interested in more cossack units
+is_in_important_war = yes #checks if the AI thinks it is in a war for its own survival
+personality = #use one of the ai personalities
+
+#############################
+# Army
+#############################
+army_professionalism = 0.2 #Can also use scopes as a left side argument
+army_size = #Can use a number here to check army size. Can use tag, ROOT, FROM, PREV,etc to compare num of regiments
+army_size_percentage = 0.7 #percentage of forcelimit used
+army_tradition = 10
+artillery_fraction = #should be a decimal
+cavalry_fraction = #should be a decimal
+has_commanding_three_star = yes
+infantry_fraction = #should be a decimal
+janissary_percentage = 0.1
+land_forcelimit = 20
+land_maintenance = 1.0
+manpower = 12 #available manpower, can also compare countries with tag, ROOT, FROM, PREV, etc.
+manpower_percentage = 0.5
+max_manpower = 20
+max_manpower_greater_than = #never found in code
+num_of_artillery = 10 #Can also use tag, ROOT, FROM, PREV,etc to compare num of regiments
+num_of_banners = 10
+num_of_cavalry = 10 #Can also use tag, ROOT, FROM, PREV,etc to compare num of regiments
+num_of_cossacks = 5
+num_of_conquistadors = 1
+num_of_generals = 1
+num_of_generals_with_traits = 1
+num_of_infantry = 10 #Can also use tag, ROOT, FROM, PREV,etc to compare num of regiments
+num_of_janissaries = 10
+num_of_mercenaries = 1
+num_of_rajput = 20
+num_of_regiments_at_full_drill = 100
+num_of_streltsy = 25
+unit_type = #unit group, e.g. western or eastern
+
+#############################
+# CB enabled
+#############################
+cb_on_government_enemies = yes
+cb_on_overseas = yes
+cb_on_primitives = yes
+cb_on_religious_enemies = yes
+
+#############################
+# Colonization
+#############################
+has_colonial_parent = yes
+is_colonial = yes #This may have been removed with 1.4
+is_colonial_nation = yes
+is_former_colonial_nation = yes
+is_random_new_world = no
+num_of_colonies = 3
+num_of_colonists = 1
+num_of_conquistadors = 1
+num_of_explorers = 1
+tariff_value = 0.25 #Percentage
+overseas_provinces_percentage = 0.25
+
+#############################
+# Culture, Revolts, and Stability
+#############################
+accepted_culture = #culture name, ROOT, FROM, PREV, variable:variable_name, variable:SCOPE:variable_name
+average_autonomy = 10
+average_autonomy_above_min = 2
+average_effective_unrest = 2
+average_home_autonomy = 10
+average_unrest = 1
+culture_group =   #culture group name, ROOT, FROM, PREV, variable:variable_name, variable:SCOPE:variable_name
+dominant_culture = #capital, culture name
+has_spawned_rebels = #rebel type here to check for that type of rebel, works for country scope not sure for province scope
+has_unified_culture_group = yes
+num_accepted_cultures = 2
+num_of_rebel_armies = 1
+num_of_rebel_controlled_provinces = 1
+num_of_revolts = 1
+overextension_percentage = 0.05
+primary_culture =  #culture name, ROOT, FROM, PREV, variable:variable_name, variable:SCOPE:variable_name
+revolt_percentage = 0.1
+stability = 1
+unrest = 5 #Can now also be used in the country scope
+
+#############################
+# Diplomatic
+#############################
+alliance_with =
+border_distance = { who =  distance = 100 } #check distance using debug_mode
+can_justify_trade_conflict =
+can_release = #never found in code, not sure that this is working properly, don't use
+capital_distance = { who =  distance = 100 } #Calculates the distance between two capital provinces' primary cities and not the provinces' borders. Check distance using debug_mode
+claim = #ROOT, tag, etc., returns true if the country has any province claims in the scope country
+core_claim = #ROOT, tag, etc., returns true if the country has any core provinces in the scope country.  Tooltip states claim instead of core
+defensive_war_with =
+diplomatic_reputation = 5
+dynasty = #ROOT, FROM, tag, PREV, etc
+federation_size = 5
+guaranteed_by =
+has_casus_belli = { type = _ target = _ }
+has_casus_belli_against =
+has_discovered = #tag, etc.
+has_given_consort_to =
+has_guaranteed =
+has_spawned_supported_rebels = #FROM, ROOT, PREV, tag, etc
+has_spy_network_from = { who = _ value = 25 }
+has_spy_network_in = { who = _ value = 25 }
+heir_nationality = #ROOT, FROM, PREV, probably tag as well
+historical_friend_with =
+historical_rival_with =
+in_league = #name of religion
+institution_difference = { who = ROOT value = 2 } #Compares number institution with target country
+is_client_nation_of =
+is_colonial_nation_of =
+is_enemy =
+is_federation_leader = yes
+is_in_coalition = no
+is_in_trade_league_with =
+is_league_enemy = #ROOT, FROM, PREV, etc.
+is_league_friend =
+is_neighbor_of =
+is_origin_of_consort =
+is_possible_march =
+is_possible_vassal = #never found in code, tested and works
+is_rival =
+is_subject_of =
+is_threat =
+junior_union_with =
+knows_country =
+march_of =
+marriage_with =
+neighbors_tech_discount =
+num_of_allies = 3
+num_of_coalition_members = 6
+num_of_diplomatic_relations = 4
+num_of_diplomats = 1
+num_of_free_diplomatic_relations = 1
+num_of_royal_marriages = 3
+num_of_trusted_allies = 5
+num_of_war_reparations = 5
+offensive_war_with =
+overlord_of =
+provinces_on_capital_continent_of =
+subsidised_percent_amount = 0.5
+senior_union_with =
+succession_claim =
+tech_difference =
+trade_embargoing =
+trade_embargo_by =
+trade_league_embargoed_by =
+truce_with =
+vassal_of =
+war_with =
+war_score_against = {
+    who =
+    value =
+}
+
+has_opinion = {
+    who =
+    value =
+}
+has_opinion = { who = _ value = _ }                   #On one line, how the scope feels about the who
+reverse_has_opinion = { who = _ value = 80 }          #On one line, how the who feels about the scope
+#my interpretation
+PAP = { has_opinion = { who = ROOT value = 100 } }              #This requires that the Pope has an opinion of the ROOT of at least 100
+PAP = { reverse_has_opinion = { who = ROOT value = 100 } }        #This requires that the ROOT has an opinion of the Pope of at least 100
+
+has_opinion_modifier = {
+    modifier =
+    who =
+}
+
+#on one line
+has_opinion_modifier = { who = _ modifier = _ }
+
+has_opinion_modifier = {
+    modifier = aggressive_expansion
+    who = FROM
+    value = -49
+}
+#can also use reverse
+reverse_has_opinion_modifier = { who = _ modifier = _ }
+
+#Do not need to use all of these perameters in the trigger, these are just all the possible options
+is_in_war = {
+    attacker_leader =
+    defender_leader =
+    casus_belli =
+    war_score =
+    duration =
+    war_goal_province =
+    start_date =
+
+    # You can add multiple to check for multiple defenders/participants
+    attackers =
+    defenders =
+    participants =
+}
+#As of 1.23, can use scopes (e.g. ROOT, FROM, PREV, THIS, etc.) for defenders, attackers, participants, and war_goal_province
+
+years_in_union_under = {
+    who =
+    years = 50
+}
+
+years_in_vassalage_under = {
+    who =
+    years = 10
+}
+
+#These three triggers check the scopes relative strength to the who
+#Therefore 0.5 would return true if their strength is at least half of the who's strength, while 2.0 would return true if their strength is at least double the who's strength
+#for who you can use tag, FROM, ROOT, PREV, etc.
+army_strength = {
+    who =
+    value = 0.5
+}
+military_strength = {
+    who =
+    value = 2.0
+}
+naval_strength = {
+    who =
+    value = 1.0
+}
+
+#############################
+# Discovery, States, Territories, Areas, and Provinces (Country Scope)
+#############################
+capital = #can use province id
+controls = #can use province id
+core_percentage = 0.5 #only considers number of provinces and not development
+has_discovered = #Province id, region, continent, ROOT (if in province scope)
+is_claim = #province id, ROOT, FROM, PREV, etc.
+is_core = #can use province id
+is_state_core = #can use province id
+is_territorial_core = #can use province id
+num_of_continents = 2 #How many continents does the scope have provinces on
+num_of_provinces_in_states = 10
+num_of_provinces_in_territories = 10
+num_of_states = 5
+num_of_territories = 5
+owns =
+owns_all_islands = yes
+owns_core_province =
+owns_or_non_sovereign_subject_of =  #can use province id, same as owns_or_subject_of but excludes tributaries
+owns_or_subject_of #can use province id
+owns_or_vassal_of = #this maps to owns_or_subject_of, so just use that instead
+same_continent = #ROOT, FROM, PREV, tag, checks if two countries capital is on the same continent
+
+has_discovered_region = {
+    region =
+    years =
+}
+#region = can use specific region name or a scope (FROM, ROOT, PREV)
+
+#This trigger is not localized
+has_discovered_capital_region_of = {
+    who =
+    years =
+}
+
+#This trigger is not localized
+has_any_country_in_region_discovered_capital_region_of = {
+    region =
+    who =
+    years =
+}
+
+#another way to check discovery
+north_america = { has_discovered = ROOT }
+
+#Do you own any province in this region
+name_of_region_or_continent = { owned_by = tag }
+
+#Checks if all provinces of the region return true for the trigger
+#So this triggers true if you own all the provinces of this region
+name_of_region_or_continent = { type = all owned_by = tag }
+
+#This triggers true if Ottomans don't own any provinces in Western Balkans
+western_balkans = { type = all NOT = { owned_by = TUR }}
+
+#############################
+# Economy, Power Currency, Ages, and Tech
+#############################
+adm_power = 50
+adm_tech = 10 #Should also work with scopes as a left side argument
+current_age =
+dip_power = 50
+dip_tech = 10 #Should also work with scopes as a left side argument
+gold_income = 10
+gold_income_percentage = 0.35
+has_age_ability =
+has_institution = #Institution name
+inflation = 5
+innovativeness = 20 #ranges from 0 to 100
+is_bankrupt = yes
+is_in_deficit = yes
+is_institution_enabled = #Institution name
+mil_power = 50
+mil_tech = 10 #Should also work with scopes as a left side argument
+monthly_income = 60
+national_focus = #mil/dip/adm
+num_of_loans = 5
+num_of_owned_and_controlled_institutions = 2
+production_efficiency = 0.5
+production_income_percentage = 0.33
+production_leader = { trade_goods = name_of_trade_good }
+splendor = 50
+tax_income_percentage = 0.33
+technology_group =
+total_base_tax = 25
+total_development = 200
+treasury = 200
+years_of_income = 0.25
+
+#Not sure what the value part does, but it isn't needed
+production_leader = {
+    trade_goods =
+    value = yes #yes or no
+}
+
+#############################
+# Estates, Factions, and Disasters
+#############################
+has_dlc = "The Cossacks"
+
+estate_influence = { estate = name influence = 80 }
+estate_loyalty = { estate = name loyalty = 50 }
+estate_territory = { estate = name territory = 15 }
+faction_in_power =
+has_any_disaster = no
+has_disaster = #disaster name
+has_disaster_progress = { disaster = _ value = _ }
+has_estate = #estate name
+has_estate_influence_modifier = { estate = name modifier = modifier_name }
+has_estate_loyalty_modifier = { estate = name modifier = modifier_name }
+has_factions = yes
+incident_variable_value = { incident = _ value = 3 }
+is_incident_active = #incident name, any, yes, no, none
+is_incident_happened =
+is_incident_possible =
+is_incident_potential =
+num_of_powerful_estates = 3
+
+compare_regiments_to_province_of_estate = {
+    regiment = regiment_name
+    estate = estate_name
+    compare = less
+}
+
+faction_influence = {
+    faction =
+    influence =
+}
+
+#############################
+# Governments and Advisors
+#############################
+absolutism = 50
+advisor = #type of advisor - Can also use advisor type as a trigger to check skill level, i.e. statesman = 3
+advisor_exists = 236  #This number is the advisor_id, found in advisor history
+corruption = 50
+current_debate = #Debate name
+current_size_of_parliament = 3
+government = dictatorship
+government = monarchy
+government = republic
+government = theocracy
+government = tribal
+government_rank = 2
+government_reform_progress = 10
+has_active_debate = yes
+has_active_policy =
+has_advisor = yes
+has_government_attribute = #heir, queen, states_general_mechanic, militarised_society, enables_nepotism, enables_aristocratic_idea_group, enables_plutocratic_idea_group
+has_government_attribute_short_desc = #always has locked_government_type as right side argument in vanilla, not sure if can use others. This is same as has_government_attribute but generates a different tooltip
+has_government_mechanic = #mechanic
+has_government_power = { type = _ value = _ } #type = #russian_mechanic, feudal_theocracy_mechanic, tribal_federation_mechanic, mamluk_mechanic, iqta_mechanic
+has_parliament = yes
+has_reform = #reform name
+has_reform_level = 5 #Checks if country has reached this level of reforms
+has_states_general_mechanic = yes
+have_had_reform = #reform name
+horde_unity = 70
+imperial_mandate = 75
+is_advisor_employed = 562  #number is the advisor_id
+is_emperor_of_china = yes
+is_league_leader = yes
+is_monarchists_in_power = yes #states general mechanic
+is_nomad = no
+is_orangists_in_power = yes #states general mechanic
+is_reform_available = #reform name
+is_statists_in_power = yes #states general mechanic
+is_tribal = yes
+legitimacy = 95  #Highest is 100
+legitimacy_equivalent = 80 #checking the relevant value of Legitimacy, Republican Tradition, Devotion etc.
+legitimacy_or_horde_unity = 95
+militarised_society = 50
+months_of_ruling = 12
+num_of_different_cultures_in_court = 4
+num_of_different_religions_in_court = 4
+percentage_backing_issue = 0.5
+prestige = 25 #Can also compare two countries with tag, ROOT, FROM, PREV, etc.
+primitives = yes
+republican_tradition = 80
+statists_vs_orangists = 0.9
+tribal_allegiance = 10
+yearly_corruption_increase = 0.001
+
+#Can use any combination of the following parameters
+employed_advisor = {
+    religion =
+    culture =
+    type =
+    category =
+}
+#religion = #religion name, true_faith, heretic, heathen, ROOT, FROM, PREV, TAG, province id, variable:variable_name, variable:SCOPE:variable_name
+#culture = #culture name, ROOT, FROM, PREV, TAG, province id, variable:variable_name, variable:SCOPE:variable_name
+#type = #type of adviser
+#category = #ADM, DIP, MIL
+
+#Can also check gender
+employed_advisor = {
+    type =
+    is_male = yes
+}
+employed_advisor = {
+    type =
+    is_female = yes
+}
+
+#############################
+# HRE
+#############################
+allows_female_emperor = no
+has_hre_emperor_modifier =
+has_hre_member_modifier =
+hre_heretic_religion = #ROOT, FROM, tag, PREV, etc
+hre_leagues_enabled = yes
+hre_reform_level = 6
+hre_religion = #name of religion
+hre_religion_locked = no
+hre_religion_treaty = no
+hre_size = 25
+imperial_influence = 10
+is_elector = yes
+is_emperor = yes
+is_imperial_ban_allowed = yes
+is_part_of_hre = yes
+num_of_electors = #never found in code, should probably be a number
+num_of_foreign_hre_provinces = 5
+preferred_emperor = #ROOT, FROM, tag, PREV, etc
+will_back_next_reform = yes
+
+#############################
+# Ideas
+#############################
+full_idea_group =
+has_idea =
+has_idea_group =
+#Can check for number of ideas in each catagory, i.e. administrative_ideas = 1 (check list.txt for all idea groups)
+
+#############################
+# Military (both navy and army)
+#############################
+had_recent_war = 10 #number of years since last war
+has_leader = "_"  #name of leader
+has_truce = no
+has_unit_type = #specific unit name
+has_wartaxes = yes
+is_at_war = yes
+is_in_league_war = no
+revanchism =
+war_exhaustion = 5
+war_score = 25 #war_score = 50 (or any number) is true if at least one war is going well. NOT = { war_score = -50 } (any number) means that all wars are going terrible.
+war_with_nomads = #I believe this yes or no but not sure
+
+
+has_leaders = {
+    value = 1
+    type =
+    include_monarch = no
+    include_heir = no
+}
+#type = general, admiral
+ 
+#found in list of triggers but not in code, unsure how it should be formated
+has_leader_with
+
+#Killzerslaul has tested the trigger using the following format and says that it works. Thanks for testing.
+#Checks that the country has a leader with at least these stats
+has_leader_with = {
+    fire = 6
+    shock = 6
+    manuever = 6
+    siege = 1
+}
+#Golladan also discoverd that we can specify the type of leader using the following
+has_leader_with = {
+   admiral = yes
+   manuever = 1
+}
+has_leader_with = {
+   general = yes
+   manuever = 1
+}
+#Can use general or admiral, but not explorer or conquistador.  Explorers are considered admirals, and conquistadors are considered generals
+
+total_losses_in_won_wars = {
+    winner =
+    looser =
+    casualties = 100000
+}
+#Tags work for winner and looser, not sure if scopes do though
+
+#############################
+# Navy
+#############################
+blockade = 75 #maybe checking percentage of country blockaded
+galley_fraction = #should be a decimal
+has_privateers = yes
+heavy_ship_fraction = #should be a decimal
+light_ship_fraction = #should be a decimal
+transport_fraction = #should be a decimal
+naval_forcelimit = 40
+naval_maintenance = 1.0
+navy_size = #Can use a number here to check navy size. Can use tag, ROOT, FROM, PREV,etc to compare num of ships
+navy_size_percentage = 0.5
+navy_tradition = 40
+num_of_admirals = 1
+num_of_admirals_with_traits = 1
+num_of_captured_ships_with_boarding_doctrine = 20
+num_of_explorers = 1
+num_of_galley = 10 #Can also use tag, ROOT, FROM, PREV,etc to compare num of ships
+num_of_heavy_ship = 10 #Can also use tag, ROOT, FROM, PREV,etc to compare num of ships
+num_of_light_ship = 10 #Can also use tag, ROOT, FROM, PREV,etc to compare num of ships
+num_of_transport = 10 #Can also use tag, ROOT, FROM, PREV,etc to compare num of ships
+num_of_ports = 1
+num_of_ports_blockading = 10
+num_of_total_ports = 10
+num_ships_privateering = 50
+sailors = 4000
+sailors_percentage = 0.9
+
+#############################
+# Religion
+#############################
+at_war_with_religious_enemy = yes
+authority = 50
+church_power = 50
+current_icon = #Icon name
+devotion = 75
+dominant_religion = #capital, specific religion, secondary
+doom = 5
+fervor = 75
+has_active_fervor = no
+has_adopted_cult = #cult name
+has_border_with_religious_enemy = yes
+has_church_aspect = #Aspect's name
+has_friendly_reformation_center = yes
+has_hostile_reformation_center = yes
+has_matching_religion = #ROOT, FROM, TAG, PREV, etc.
+has_personal_deity = #Deity's name
+has_unlocked_cult = #cult name
+invested_papal_influence = 10
+is_any_heresy_enabled = yes #never found in code
+is_crusade_target = yes
+is_defender_of_faith = yes
+is_excommunicated = no
+is_force_converted = no
+is_papal_controller = yes
+is_previous_papal_controller = yes
+is_religion_enabled = protestant
+is_religion_enabled = reformed
+is_religion_reformed = yes
+isolationism = 2
+karma = 50 #Goes from -100 to 100
+num_of_active_blessings = 2
+num_of_aspects = 2
+num_of_cardinals = 1 #guessing this is number of cardinals under your influence
+num_of_harmonized = 7
+num_of_missionaries = 2
+num_of_religion = { religion = _ value = 3 }  #with _ being name of religion, also seen value be a decimal and in this case it is probably a percentage of total provinces
+num_of_religion = { heretic = yes value = 3 } #Checks for scope's religion and heretic religions, so basically counts all provinces of the scope's religous group
+num_of_unlocked_cults = 2
+papacy_active = yes  #Country and Province Scope
+papal_influence = 20
+patriarch_authority = 0.5
+piety = -0.1
+reform_desire = 0.1
+religion = #name of religion, ROOT, FROM, PREV, secondary, variable:variable_name, variable:SCOPE:variable_name
+religion_group =  #name of religion group, ROOT, FROM, PREV, secondary, variable:variable_name, variable:SCOPE:variable_name
+religion_years = { protestant = 5 }
+religion_years = { reformed = 5 }
+religious_school = { group = _ school = _ } #checks if country has this school
+religious_unity = 1.0 #Percentage of people in your country following the state religion, based on province taxes
+secondary_religion = #name of religion
+school_opinion = { who =  opinion =  }
+total_number_of_cardinals = 1
+uses_authority = yes
+uses_blessings = yes
+uses_church_aspects = yes
+uses_cults = yes
+uses_devotion = yes
+uses_doom = yes
+uses_fervor = yes
+uses_isolationism = yes
+uses_karma = yes
+uses_papacy = yes
+uses_patriarch_authority = yes
+uses_personal_deities = yes
+uses_piety = yes
+uses_religious_icons = yes
+uses_syncretic_faiths = yes
+
+#this may need to be confirmed
+#Can also use religion = a_number to check the tolerance of a particular religion
+#example
+NOT = { protestant = -2 }
+
+#############################
+# Rulers, Heirs, and Consorts
+#############################
+ADM = 3
+DIP = 3
+MIL = 3
+can_heir_be_child_of_consort = yes #Checks if heir is a child of your consort
+consort_age = 30
+consort_adm = 3
+consort_dip = 3
+consort_mil = 3
+consort_culture = #culture name, ROOT, FROM, PREV, TAG, province id, rebel, variable:variable_name, variable:SCOPE:variable_name
+consort_has_personality = #personality name
+consort_religion = #religion name, ROOT, FROM, PREV, TAG, province id, rebel, variable:variable_name, variable:SCOPE:variable_name
+dynasty = "dynasty name"
+exiled_same_dynasty_as_current = #unique text string set with either exile_ruler_as or define_exiled_ruler effects, checks if exiled ruler has same dynasty as current ruler
+had_consort_flag = { flag = _ days = 365 }
+had_heir_flag = { flag = _ days = 365 }
+had_ruler_flag = { flag = _ days = 365 }
+has_consort = yes
+has_consort_flag = yes
+has_consort_regency = yes
+has_female_consort = yes
+has_female_heir = no
+has_foreign_consort = yes
+has_foreign_heir = yes
+has_heir = yes #can also use a specific name
+has_heir_flag =
+has_new_dynasty = yes
+has_regency = no #Includes consort regencies
+has_ruler = "specific ruler name"
+has_ruler_flag =
+has_ruler_modifier =
+heir_adm = 3
+heir_dip = 3
+heir_mil = 3
+heir_age = 15
+heir_claim = 90
+heir_culture = #culture name, ROOT, FROM, PREV, TAG, province id, rebel, variable:variable_name, variable:SCOPE:variable_name
+heir_has_consort_dynasty = yes
+heir_has_personality = #personality name
+heir_has_ruler_dynasty = yes
+heir_religion = #religion name, ROOT, FROM, PREV, TAG, province id, rebel, variable:variable_name, variable:SCOPE:variable_name
+is_heir_leader = yes
+is_female = no
+is_monarch_leader = yes
+num_of_consorts = 6 #Checks how many consorts the current ruler has had
+ruler_age = 40
+ruler_consort_marriage_length = 3 #in years
+ruler_culture = #culture name, ROOT, FROM, PREV, TAG, province id, rebel, variable:variable_name, variable:SCOPE:variable_name
+ruler_has_personality = #personality name
+ruler_is_foreigner = yes
+ruler_religion = #religion name, ROOT, FROM, PREV, TAG, province id, rebel, variable:variable_name, variable:SCOPE:variable_name
+
+#############################
+# Subjects
+#############################
+can_be_overlord = #type of subject e.g. tributary_state, checks if scope fulfills the requirements to have those types of subjects
+can_create_vassals = #never found in code
+colony = 3
+development_of_overlord_fraction = 0.25
+has_divert_trade = yes #Subject interaction, used in subject's scope
+has_embargo_rivals = yes #Subject interaction, used in subject's scope
+has_promote_investments = #Trade Company Tag, Subject interaction but since only for trade companies it won't be in subject's scope
+has_scutage = yes #Subject interaction, used in subject's scope
+has_send_officers = yes #Subject interaction, used in subject's scope
+has_subsidize_armies = yes #Subject interaction, used in subject's scope
+has_support_loyalists = yes #Subject interaction, used in subject's scope
+is_client_nation = yes
+is_lesser_in_union = no
+is_march = yes
+is_overseas_subject = yes
+is_protectorate = yes
+is_subject = no
+is_subject_of_type = #see subject_types file for arguments
+is_vassal = no
+liberty_desire = 80
+march = 2 #how many march subjects scope has
+personal_union = 2 #how many pu juniors scope has
+protectorate = 2 #how many protectorate subjects scope has
+tributary = 2 #how many tributary subjects scope has
+vassal = 2 #how many vassal subjects scope has
+
+#############################
+# Trade
+#############################
+cotton = 1 OR grain = 1 (etc)
+country_has_center_of_trade_of_level = 2
+is_in_trade_league = yes
+is_trade_league_leader = yes
+mercantilism = 25
+num_of_centers_of_trade = 3
+num_of_merchants = 4
+num_of_strong_trade_companies = 4
+num_of_trading_bonuses = 7
+num_of_trade_embargos = 1
+trade_efficiency = 0.5
+trade_income_percentage = 0.35
+
+trading_bonus = {
+    trade_goods =
+    value = yes #yes or no
+}
+
+
+trading_part = {
+    trade_goods =
+    value = 0.2
+}
+
+trading_policy_in_node = {
+    node =
+    policy =
+}
+#node = ROOT, PREV, FROM
+#policy = trade policy name, any
+
+#############################
+# Variables (used in both country and province scope)
+#############################
+As of 1.27, can now just write = { variable_name = variable_value } #ex. check_variable = { voting_streak = 11 }
+check_variable = { which = _ value = 5 }
+is_variable_equal = { which = _ value = 5 }
+#Variable effects and triggers can now take a second variable as an argument
+#Variable effects and triggers can now take a scope as an argument
+#Examples from Captain Gars
+check_variable = { which = var1 which = var2 }
+check_variable = { which = var1 which = FROM }
+
+#Use to create a new variable for a trigger inside the trigger section
+#Sets all export_to_variable to their original value before generating the tooltip.
+variable_arithmetic_trigger = {
+    export_to_variable = {
+        variable_name =
+        value =
+    }
+    export_to_variable = {
+        variable_name =
+        value =
+        who =
+    }
+    #variable triggers
+}
+#See export_to_variable in the effects section for the possible left side argument for value =
+
+#Example
+variable_arithmetic_trigger = {
+    export_to_variable = {
+        variable_name = cultural_heir_culture
+        value = heir_culture
+    }
+    export_to_variable = {
+        variable_name = teacher_culture
+        value = adm_advisor_culture
+    }
+    export_to_variable = {
+        variable_name = parent_culture
+        value = ruler_culture
+    }
+    NOT = {
+        variable_arithmetic_trigger = {
+            is_variable_equal = {
+                which = cultural_heir_culture
+                which = teacher_culture
+            }
+        }
+    }
+    is_variable_equal = {
+        which = cultural_heir_culture
+        which = parent_culture
+    }
+}
+
+#############################
+# Province
+#############################
+##
+# Other Triggers
+##
+had_province_flag = { flag = _ days = 365 }
+has_active_triggered_province_modifier =
+has_climate = #Climate name
+has_monsoon = #mild_monsoon, normal_monsoon, severe_monsoon
+has_port = yes
+has_province_flag =
+has_province_modifier = #Can check for triggered province modifiers too
+has_terrain =
+has_winter =
+island = yes
+is_capital = yes
+is_capital_of = #Scope
+is_city = yes
+is_in_capital_area = yes #Need to test this to see what it checks
+is_part_of_hre = yes
+is_sea = yes #checks if is a sea province (ocean, sea, lake)
+is_wasteland = no
+province_distance = { who =  distance = 100 } #who = province id, ROOT, FROM, PREV
+province_is_on_an_island = yes
+
+has_local_modifier_value = {
+    which =
+    value =
+}
+
+##
+# Buildings, institutions, and economy
+##
+base_manpower = 8
+base_production = 8
+base_tax = 8
+can_build =
+construction_progress = 0.5
+current_institution = 50 #checks how much the currently growing institution in the province has progressed (0-100)
+current_institution_growth = 0.5
+development = 10
+devastation = 5
+has_building =
+has_construction = #core, culture, building, merchant, diplomat, missionary, army, navy, canal, great_project, colonist, siberian, or any
+has_great_project = #specific name
+has_unembraced_institution = #Need to test this, not sure if it's a province or country trigger
+institution_name = 50 #0-100, use the specific name of an institution to check how close the province is to gaining it
+is_institution_origin = #institution name
+is_prosperous = yes
+num_free_building_slots = 1
+num_of_times_improved = 5
+prosperity = 75
+
+##
+# Colonies
+##
+colonial_claim_by_anyone_of_religion = #country or specific religion, checks if anyone from that religion (or the country's religion) has gotten a colonial grant for the scope's colonial region from any potential pope-like entities
+colonial_region = #name_of_colonial_region
+colonysize = 500
+has_colonist = yes
+has_empty_adjacent_province = yes #can only use yes, using no doesn't work.  Instead use NOT = { has_empty_adjacent_province = yes }
+is_colony = yes
+is_empty = yes
+is_overseas = no
+is_religion_grant_colonial_claim = yes #yes, no, or country, checks if a province has been granted by any/all religious leader(s) to any country, to no country, or by their own religious leader to a specific country
+native_ferocity = 3
+native_hostileness = 5
+native_size = 1
+owner_is_colonial_nation = yes
+range = #ROOT, FROM, PREV, tag, etc.  This checks if the province or region is in colonization range.
+
+##
+# Controls, Cores, and Claims
+##
+controlled_by = #owner, REB, tag, ROOT, PREV, FROM, rebel_type
+is_claim = #tag, ROOT, FROM, PREV, controller, owner
+is_core = #tag, ROOT, FROM, PREV, controller, owner
+is_permanent_claim = #tag, ROOT, FROM, PREV, controller, owner
+is_state_core = #tag, ROOT, FROM, PREV, controller, owner
+is_territorial_core =  #tag, ROOT, FROM, PREV, controller, owner
+months_since_defection = 60  #not entirely sure what this checks, found in flavorGEN,flavorMAM
+months_since_last_owner_change = 60 #Doesn't work
+owned_by =
+previous_owner = #tag, ROOT, FROM, PREV, etc.
+
+##
+# Estates, Parliament, Edicts
+##
+current_bribe = #bribe name
+has_estate = #yes or estate name, not sure if has_estate = no works since Paradox always uses NOT = { uses has_estate = yes }
+has_seat_in_parliament = yes
+has_state_edict = #name of edict
+is_backing_current_issue = no
+
+##
+# Military
+##
+fort_level = 1
+garrison = 100 #This is a percentage
+has_heir_leader_from = #ROOT, PREV, FROM, TAG, owner, controller
+has_influencing_fort = yes
+has_ruler_leader_from = #ROOT, PREV, FROM, TAG, owner, controller
+has_siege = yes
+has_supply_depot = #ROOT, FROM, PREV
+is_blockaded = no
+is_looted = yes
+sieged_by = #owner, REB, tag, ROOT, PREV, FROM, rebel_type
+units_in_province = 1 #1.13 added the ability to use scopes here, not sure if they fixed the previous issue where only the number 1 worked
+unit_in_battle = yes #unit_in_battle = no doesn't work, must use NOT = { unit_in_battle = yes }
+unit_has_leader = yes #unit_has_leader = no doesn't work, must use NOT = { unit_has_leader = yes }
+unit_in_siege = yes #unit_in_siege = no doesn't work, must use NOT = { unit_in_siege = yes }
+
+num_of_units_in_province = {
+    who =
+    type =
+    amount =
+}
+#who = enemy, TAG, ROOT, PREV, or FROM, controller and owner may work but need to be tested
+#type = infantry, cavalry, artillery, ship type, or specific unit
+#type and who is not needed, if not included will default to any/all
+
+#Check for unit typs in province
+artillery_in_province = 1 #can also use tags and scopes
+cavalry_in_province = 1 #can also use tag and scopes
+galleys_in_province = 1 #can also use tags and scopes
+heavy_ships_in_province = 1 #can also use tags and scopes
+infantry_in_province = 1 #can also use tags and scopes
+light_ships_in_province = 1 #can also use tags and scopes
+transports_in_province = 1 #can also use tags and scopes
+
+##
+# Religion and Culture
+##
+culture = #culture name, ROOT, FROM, PREV, controller, owner, variable:variable_name, variable:SCOPE:variable_name
+culture_group = #culture group name, ROOT, FROM, PREV, controller, owner, variable:variable_name, variable:SCOPE:variable_name
+has_cardinal = yes
+has_missionary = yes
+has_owner_culture = yes
+has_owner_accepted_culture = yes
+has_owner_religion = yes
+has_pasha = yes
+has_state_patriach = yes
+is_reformation_center = yes
+is_religion_enabled = protestant
+is_religion_enabled = reformed
+religion = #ROOT, FROM, PREV, controller, owner, secondary
+religion_group = #ROOT, FROM, PREV, controller, owner
+tolerance_to_this = 2
+
+##
+# Revolts, Rebels, and Autonomy
+##
+can_spawn_rebels = #rebel type here
+has_harsh_treatment = yes
+has_rebel_faction = #REB, not sure if you can put rebel type here
+likely_rebels = #rebel type here
+local_autonomy = 50
+nationalism = 10
+pure_unrest = 2
+unrest = 5
+
+##
+# States, Territories, Areas, and Regions
+##
+area = #area name
+continent =
+is_state = yes
+is_territory = yes
+province_group = #province group name
+province_id = #id number, but can also use ROOT and such
+province_size = #Unsure what this checks
+region = #region name, capital, ROOT, PREV, FROM, if using a scope (such as ROOT) the tooltip is messed up and should be fixed
+same_continent = #ROOT, FROM, PREV, checks if two provinces are on the same continent. A country in left argument defaults to its capital
+superregion = #super region name
+
+#In a Region scopes
+country_or_non_sovereign_subject_holds #ROOT, FROM, TAG, PREV, etc., same as country_or_subject_holds but excludes tributaries
+country_or_subject_holds = #ROOT, FROM, TAG, PREV, etc.  Returns true if the country or its subjects holds at least one province in the region
+country_or_vassal_holds = #maps to country_or_subject_holds so use that instead
+
+#Example
+the_carribean = { country_or_vassal_holds = ROOT }
+
+#Can also include a type = all clause, which changes the requirement from 'at least one province in the region' to 'all provinces in the region'
+the_carribean = {
+    type = all
+    country_or_vassal_holds = ROOT
+}
+
+##
+# Trade
+##
+is_owned_by_trade_company = yes
+province_has_center_of_trade_of_level = 2
+province_trade_power = 10
+trade_company_size = 10
+trade_goods = #e.g. grain
+trade_range = #ROOT, tag, PREV, FROM, etc.
+
+has_trade_company_investment_in_area  = {
+    investment = investment_name
+    investor = ROOT
+}
+
+#Checks the number of investments of a certain type that are done by all Trade Companies in a trade node
+num_investments_in_trade_company_region = {
+    investment = investment_name
+    value = 3
+}
+
+#Must be within a trade scope
+has_merchant = #ROOT, TAG, PREV, FROM, etc.
+has_most_province_trade_power = #In an active trade node or the province id of trade node.  tag, ROOT, FROM, etc
+has_trader =  #Use in an active trade node or use province id of a trade node. Use ROOT, FROM, tag, PREV, etc.
+highest_value_trade_node = yes
+is_sea = yes #used in the active trade node scope and checks if the trade node is in a water province (can actually be used outside of a trade scope)
+is_strongest_trade_power = #In an active trade node or the province id of trade node. Use tag, ROOT, FROM, etc
+is_node_in_trade_company_region = yes
+
+has_privateer_share_in_trade_node = {
+    who =
+    share = 10
+}
+
+has_trade_modifier = {
+    who =
+    name =
+}
+
+#for country = can use FROM, ROOT, etc.
+#Country isn't needed could just have privateer_power = { share = 10 }
+privateer_power = {
+    country = FROM
+    share = 1
+}
+
+trade_share = {
+    country = ROOT
+    share = 10
+}
+
+#############################
+# Helpful Scripted Triggers
+#############################
+was_never_end_game_tag_trigger = yes

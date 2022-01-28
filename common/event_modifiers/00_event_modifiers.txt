@@ -1,0 +1,51 @@
+student_tech = {
+	technology_cost = 0.3
+}
+
+student_tech2 = {
+	technology_cost = 0.5
+	global_institution_spread = -0.5
+	global_unrest = 1
+	global_manpower_modifier = 0.3
+}
+student_techUP = {
+	technology_cost = -0.1
+	global_institution_spread = 0.2
+	global_autonomy = 0.05
+}
+
+student_unrest = {
+	global_unrest = 1
+	global_manpower_modifier = -0.2
+}
+student_techUP2 = {
+	technology_cost = -0.2
+	global_manpower_modifier = 0.2
+}
+student_unrest2 = {
+	global_unrest = 1
+	global_manpower_modifier = -0.4
+
+}
+student_techUP3 = {
+	technology_cost = -0.25
+	global_manpower_modifier = 0.25
+}
+
+student_MegaReform = {
+	global_institution_spread = 0.5
+	technology_cost = -0.3
+	idea_cost = -0.2
+
+}
+
+
+UKW_TURBO = {
+	land_morale = 1
+	discipline = 1
+	land_maintenance_modifier = -5
+	land_forcelimit_modifier = 50
+	production_efficiency = 5
+	global_tax_income = 5
+	land_forcelimit = 20
+}

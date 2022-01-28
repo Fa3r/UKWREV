@@ -1,0 +1,140 @@
+﻿l_english:
+# Private things
+flavor_ukw.EVTOPTAresp2: "O nie to Kitowcy"
+flavor_ukw.EVTNAMEresp2: "Pojawia sie UKW"
+flavor_ukw.EVTDESCresp2: "Na inowroclawiu pojawilo sie ukw"
+
+#fastbuilding cheat
+buildfast.1.text: "My cheat code for fast building"
+buildfast.1.desc: "Only for QA use"
+Fast_BuildingCH: "LETS GO"
+modifier_uprise: "Testing"
+
+# Normal in Game Events
+
+
+flavor_ukw.EVTNAMEukwrev1: " Students Wants Changes! "
+flavor_ukw.EVTDESCukwrev1: "Students from Incowroclaw which are respected among the country. Demand Reforms in our education system!"
+flavor_ukw.EVTOPTAukwrev1: "How dare you stand to me!"
+flavor_ukw.EVTOPTBukwrev1: "Yeah... Like i care"
+flavor_ukw.EVTOPTCukwrev1: "Give them the reforms"
+
+
+#DES 1 
+flavor_DES1.EVTNAME: "You Crushed some of their spirit"
+flavor_DES1.EVTDESC: "You crushed some of their spirit but there are still craving for you to do somthing"
+flavor_ukwA.EVTOPT1: "Crush them even more!"
+flavor_ukwA.EVTOPT2: "Meh..."
+
+
+
+#APP1
+flavor_ukwAPP1.NAME: "Appeasment brings more anger"
+flavor_ukwAPP1.DESC: "They are even more angry at you because they feel ignored. Once again their are asking you for reforms"
+flavor_ukwAPP1.OPT1: "Those, students need to know their place!"
+flavor_ukwAPP1.OPT2: "Who cares?"
+
+#REF1
+flavor_ukwREF1.NAME: "First Reformation!"
+flavor_ukwREF1.DESC: "The reforms are great! The country neven seen such a technological revolution! But the magnats are conserd about their postion and your prestigue."
+flavor_ukwREF1.OPT1: "We NEED MORE MORE MORE!"
+flavor_ukwREF1.OPT2: "Let them work as they want to"
+
+#DES2
+flavor_ukwDES2.NAME: "Restriction of the Students"
+flavor_UKWDES2.DESC: "Your trying to crush the movment but it brings some chaos and pesants are starting to question your mental health"
+flavor_ukwDES2.OPT1: "Maybe we should do some reforms?"
+flavor_ukwDES2.OPT2: "KILL KILL KILL"
+
+#APP2
+flavor_ukwAPP2.NAME: "Ignoring them dosen't seem to work..."
+flavor_ukwAPP2.DESC: "Your approach to just ignore the students just dont work they keep asking and asking for reforms..."
+flavor_ukwAPP2.OPT1: "I have Enough of you!"
+flavor_ukwAPP2.OPT2: "Lol still dont care."
+
+#REF2
+flavor_ukwREF2.NAME: "Reforms blooming."
+flavor_ukwREF2.DESC: "The UKW Reforms are blooming students keep on sky rocketing. But with every new reform they want more autonomy and more laws to them. Their are becoming even stronger than szlachta! "
+flavor_ukwREF2.OPT1: "But they helping the country!"
+flavor_ukwREF2.OPT2: "We need to end them!"
+
+#DES3
+flavor_ukwDES3.NAME: "They stand up to your aggresion!"
+flavor_ukwDES3.DESC: "There is enough of your tyrany they want freedom"
+flavor_ukwDES3.OPT1: "Time for open warfare!"
+flavor_ukwDES3.OPT2: "Do i look like i care?"
+
+#APP3
+flavor_UKWAPP3.NAME: "ENOUGH!"
+flavor_ukwAPP3.DESC: "It's Enough They want reforms and blood!"
+flavor_UKWAPP3.OPT1: "Give it to them!"
+
+#REF3
+flavor_ukwREF3.NAME: "More and More Reforms"
+flavor_ukwREF3.DESC: "The reforms are bringing a lot of changes but Students want somthing called MEGA REFORMS you are unshure if you want to give it to them. Also Magnats Are unhappy because they feel that their postion is at risk!"
+flavor_ukwREF3.OPT1: "Who cares about Magnats Lets do MEGAREFORMS"
+flavor_ukwREF3.OPT2: "I should stick with Magnats."
+
+#DES4
+flavor_ukwDES4.NAME: "Student uprise!"
+flavor_ukwDES4.DESC: "They have enough of you!"
+flavor_ukwDES4.OPT1: "So die then."
+
+#CRUSH
+flavor_ukwCRUSH.NAME: "Students want freedom and their own country!"
+flavor_ukwCRUSH.DESC: "Students took control of Inowroclaw they are pretty pissed off and full of aggresion. For one year they surely fight with all the might"
+flavor_ukwCRUSH.OPT1: "Let be it."
+
+#MegaREF1
+flavor_ukwMEG.NAME: "MegaReforms!"
+flavor_ukwMEG.DESC: "MegaReforms are still going but Magnats are angier and angier about loosing their position"
+flavor_ukwMEG.OPT1: "Keep on Reforming!"
+flavor_ukwMEG.OPT2: "Students Maybe need to be stopped?"
+
+#MegaREF2
+flavor_ukwMEGREF2.NAME: "Reforms Are Bloomin"
+flavor_ukwMEGREF2.DESC: "Reforms are bloomin and are brining a lot of good to the people. But the people say that Magnats want to do their job with student"
+flavor_ukwMEGREF2.OPT1: "We will see what future brings."
+
+#MAGNATS2
+flavor_ukwMAG2.NAME: "Magnats are pretty pissed"
+flavor_ukwMAG2.DESC: "Magnats from inowroclaw start to hunt for students who their belive are darkart magicians and control the king with their powers"
+flavor_ukwMAG2.OPT1: "Yes yes..."
+
+#MAGNATS1
+flavor_ukwMAG.NAME: "Magnats Show Their supierority!"
+flavor_ukwMAG.DESC: "They gathered and start rioting in Inowroclaw but my lord i dont think they will stop!"
+flavor_ukwMAG.OPT1: "I Should support them!"
+flavor_ukwMAG.OPT2: "Ignore them"
+
+#IGNORE1
+flavor_ukwIGN.NAME: "Magnats are rioting very hard!"
+flavor_ukwIGN.DESC: "They have enough of you and Students!"
+flavor_ukwIGN.OPT1: "Time to stop Reforms!"
+flavor_ukwIGN.OPT2: "Time to stop Magnats!"
+
+#END REFORM
+flavor_ukwENDR.NAME: "You end the reforms"
+flavor_ukwENDR.DESC: "You end the reforms, Magnats are pleased and students are angry for some time."
+flavor_ukwENDR.OPT1: "It's all Over"
+
+#END MAGNATS
+flavor_ukwENDM.NAME: "Magnats always were a pain in the ass"
+flavor_ukwENDM.DESC: "So lets end their misery"
+flavor_ukwENDM.OPT1: "Filthy Magnats"
+
+#REAL END
+flavor_ukwEND.NAME: "Magnats Or UKW"
+flavor_ukwEND.DESC: "Magnats and UKW have enough of this conflict They want you to choose!"
+flavor_ukwEND.OPT1: "Stick with UKW"
+flavor_ukwEND.OPT2: "Stick with Magnats"
+
+#UKW SIDE
+flavor_ukwUKW.NAME: "UPRISING!"
+flavor_ukwUKW.DESC: "Magnats when heard about your move they tried to assasinate you. You run away to Inowroclaw to get help from UKW. The Magnats took throne of Poland but students will defend you"
+flavor_ukwUKW.OPT1: "FOR UKW GLORY!"
+
+#MAGNATS SIDE
+flavor_ukwUKWW.NAME: "UPRISING"
+flavor_ukwUKWW.DESC: "UKW when heard about your move they tried to assasinate you. You run away to Capital to get help from Magnats. The UKW took some provinces but Magnats  will defend you"
+flavor_ukwUKWW.OPT1: "Crush UKW!"

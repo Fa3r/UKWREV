@@ -1,0 +1,72 @@
+
+
+
+
+Place_Holder = {
+	slot = 1
+	generic = no
+	ai = no
+	potential = {
+		tag = UKW
+	}
+	
+	Holder_mission_one = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "Holder_gotowy"
+				duration = 9125
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
